@@ -1,0 +1,57 @@
+/* Projects.css */
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .project-card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: calc(33.33% - 40px); /* Calcule a largura de cada cartão */
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .project-card h3 {
+    color: #333;
+  }
+
+  .project-card img {
+    width: 100%;
+  }
+  
+  .project-card p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .project-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .divName {
+    border: 1px solid red;
+    align-items: center;
+  }
+
+  .divName h2 {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .link-with-underline {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Raleway';
+
+  }
