@@ -4,6 +4,9 @@ import ArrayProjects from '../api/arrayProjects';
 import { useEffect, useState } from 'react';
 import {useParams} from 'react-router-dom'
 import Header from './header';
+
+import '../css/projectDetails.css'
+
 const ProjectDetails = () => {
 
     const [projectData, setData] = useState([])
@@ -21,20 +24,19 @@ const ProjectDetails = () => {
   
 
   return (
-    <>
+    <div className='container'>
     <Header/>
 
-    <div id="contact">
+    <div >
       <h2>{projectData.name}</h2>
-      <p>{projectData.description}</p>
-    
-    
-    <img src={projectData.img}></img>
-
+      <div className='link'>
       <a href={projectData.link}> Link para o projeto </a>
-
+      </div>
+      <p>{projectData.complexDetails}</p>
+       <img className='datailsImg' src={projectData.img} ></img>
+      </div>
+   
     </div>
-    </>
   );
 }
 

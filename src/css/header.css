@@ -1,0 +1,13 @@
+.container {
+    font-family: 'Raleway';
+}
+
+a {
+    color: #007bff; /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhado padrão */
+    transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+li {
+    list-style: none;
+}

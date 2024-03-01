@@ -1,10 +1,10 @@
 // Header.js
 import React from 'react';
+import '../css/header.css'
 
 function Header() {
   return (
-    <header>
-      <h1>Portfólio projetos</h1>
+    <div className='container'>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
@@ -12,7 +12,7 @@ function Header() {
           <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 }
 

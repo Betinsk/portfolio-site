@@ -19,7 +19,7 @@ function Projects() {
     console.log(projectData)
 
   return (
-    <section id="projects">
+    <section className='containerProject' id="projects">
    <h2>Meus Projetos</h2>
       <div className="project-grid">
         {projectData.map((project) => (
