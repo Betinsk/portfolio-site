@@ -1,6 +1,6 @@
 // About.js
 import React from 'react';
-import '../css/project.css'
+import '../css/about.css'
 
 function About() {
   return (

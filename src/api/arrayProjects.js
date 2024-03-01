@@ -2,6 +2,7 @@
 import pureform from '../assets/pureform.png'
 import prisaofederal from '../assets/prisaofederal.png'
 import carrinhoCompras from '../assets/carrinhoCompras.png'
+import filmes from '../assets/filmes.png'
 
 
 const ArrayProjects = async () => {
@@ -15,13 +16,20 @@ const projectsData = [
         },
         {
           id: 2,
+          name: 'Api de filmes',
+          img: filmes,
+          description: 'Carrinho de compras feito em react, baseado numa api do Mercado Livre',
+          link: ' https://filmesreactapp.netlify.app/ '
+        },
+        {
+          id: 3,
           name: 'Site para academia',
           img: pureform,
           description: 'Um sistema de academia, feito em javaScript',
           link: 'https://pureformfitness.netlify.app/index.html'
         },
         {
-          id: 3,
+          id: 4,
           name: 'Carrinho de compras Mercado Livre',
           img: carrinhoCompras,
           description: 'Carrinho de compras feito em react, baseado numa api do Mercado Livre',
@@ -30,6 +38,7 @@ const projectsData = [
         // Adicione mais objetos de projeto conforme necessário
       ];
     
+
     
         return projectsData
 }

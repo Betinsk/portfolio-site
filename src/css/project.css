@@ -39,16 +39,6 @@
     text-decoration: underline;
   }
   
-  .divName {
-    border: 1px solid red;
-    align-items: center;
-  }
-
-  .divName h2 {
-    margin: auto;
-    padding: 0;
-    text-align: center;
-  }
   .link-with-underline {
     text-decoration: none;
     color: #333;

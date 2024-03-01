@@ -1,0 +1,13 @@
+    .divName {
+        align-items: center;
+    }
+
+    .divName h2 {
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
