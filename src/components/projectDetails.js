@@ -15,7 +15,7 @@ const ProjectDetails = () => {
         setData(response[id - 1])
       })
   
-      }, [id]);
+      }, []);
   
       console.log(projectData)
   
@@ -28,7 +28,8 @@ const ProjectDetails = () => {
       <h2>{projectData.name}</h2>
       <p>{projectData.description}</p>
     
-  {/**  <img src={projectData.img}></img> */}
+    
+    <img src={projectData.img}></img>
 
       <a href={projectData.link}> Link para o projeto </a>
 
