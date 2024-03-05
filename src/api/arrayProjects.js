@@ -43,6 +43,7 @@ const projectsData = [
           name: 'To do list',
           img: todo,
           description: 'Lista de coisas a se fazer, feito em react',
+          complexDetails: 'Essa lista possui uma api para salvar os dados no banco de dados, que está sendo desenvolvida em java, ultilizando o framework Sprinboot, e ainda está em construção, em uma de suas funções está a capacidade de criar tárefas de diferentes categorias e completá las',
           link: 'https://todolistapisp.netlify.app/'
         },
         // Adicione mais objetos de projeto conforme necessário

@@ -14,5 +14,14 @@
     p {
         text-align: center;
         font-family: 'Raleway';
+    }
 
+    .DownloadLink {
+        text-align: center;
+        font-family: 'Raleway';
+    }
+
+    .moreDetails {
+        text-align: center;
+        font-family: 'Raleway';
     }
