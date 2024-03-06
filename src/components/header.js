@@ -10,13 +10,13 @@ import { FaGitSquare } from "react-icons/fa";
 
 function Header() {
   return (
-    <div className='container'>
+    <div className='containerHeader'>
       <nav>
         <ul>
           <li> <FaHome /> <a href="/">Home</a></li>
           <li> <GrProjects /> <a href="#projects">Projetos</a></li>
           <li> <MdContactEmergency /> <a href="#contact">Contato</a></li>
-          <li> <FaGitSquare  /> <a href="https://github.com/Betinsk">Github</a></li>
+          <li> <FaGitSquare  /> <a href="https://github.com/Betinsk" target="_blank" rel="noopener noreferrer">Github</a></li>
 
 
         </ul>

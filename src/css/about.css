@@ -21,7 +21,13 @@
         font-family: 'Raleway';
     }
 
+    .containerMore {
+        width: 1200px;
+        margin: auto;
+    }
+
     .moreDetails {
         text-align: center;
         font-family: 'Raleway';
     }
+    

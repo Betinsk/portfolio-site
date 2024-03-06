@@ -30,7 +30,7 @@ const ProjectDetails = () => {
     <div >
       <h2>{projectData.name}</h2>
       <div className='link'>
-      <a href={projectData.link}> Link para o projeto </a>
+      <a href={projectData.link} target="_blank" rel="noopener noreferrer"> Link para o projeto </a>
       </div>
       <p>{projectData.complexDetails}</p>
        <img className='datailsImg' src={projectData.img} ></img>
