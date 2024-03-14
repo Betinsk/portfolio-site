@@ -24,7 +24,7 @@ const ProjectDetails = () => {
   
 
   return (
-    <div className='container'>
+    <div className='containerDetails'>
     <Header/>
 
     <div >

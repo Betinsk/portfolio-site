@@ -50,3 +50,21 @@
     font-family: 'Raleway';
 
   }
+
+      
+  @media only screen and (max-width: 768px) {
+    /* Adicione aqui os estilos que deseja aplicar para dispositivos de tela pequena */
+    /* Por exemplo: */
+    .project-grid { 
+      display: flex;
+      flex-direction: column; 
+    }
+
+    .project-card {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 12px;
+      
+    }
+   
+  }

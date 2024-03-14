@@ -18,7 +18,7 @@
     color: rgb(88, 128, 201);
   }
 
-.container {
+.containerDetails {
     width: 800px;
     margin: auto;
     font-family: 'Raleway';
@@ -29,3 +29,19 @@
     width: 100%;
 }
 
+    
+@media only screen and (max-width: 768px) {
+  /* Adicione aqui os estilos que deseja aplicar para dispositivos de tela pequena */
+  /* Por exemplo: */
+
+  .containerDetails {
+    width: 95%;
+    margin: auto;
+    font-family: 'Raleway';
+}
+
+
+  body {
+    font-size: 14px;
+  }
+}
