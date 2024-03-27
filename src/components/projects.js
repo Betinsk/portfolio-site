@@ -27,6 +27,7 @@ function Projects() {
             <h3>{project.name}</h3>
             <img src= {project.img} />
             <p>{project.description}</p>
+            <a href={project.link}> Link para o projeto</a> <br/> <br/>
             <Link target="_blank" rel="noopener noreferrer" to={`/projectDetails/${project.id}`}> Detalhes</Link>
           </div>
 
