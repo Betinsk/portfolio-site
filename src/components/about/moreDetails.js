@@ -9,7 +9,7 @@ function MoreDetails() {
     <div className='containerMore'>
     <Header/>
     <div className='description'>
-      <p>Olá, meu nome é Carlos Carvalho, tenho 30 anos e nasci em Belo Horizonte, que fica no estado de Minas Gerais. Aspiro trabalhar como desenvolvedor web, pois gosto muito dessa profissão. É gratificante construir coisas e trabalhar em equipe.</p>
+      <p>Olá, meu nome é Carlos Carvalho, nasci em Belo Horizonte, que fica no estado de Minas Gerais. Aspiro trabalhar como desenvolvedor web, pois acho muito interessante essa área. É gratificante para mim, construir coisas e trabalhar em equipe.</p>
 
       <DownloadLink/>
     </div>

@@ -6,8 +6,8 @@ import '../../css/about.css'
 function DownloadLink() {
   return (
     <div className='DownloadLink'>
-      <p>Clique no link abaixo para ter acesso ao meu curriculun</p>
-      <a href={documentoPDF} download>Download Curriculun</a>
+      <p>Clique no link abaixo para ter acesso ao meu Curriculum</p>
+      <a href={documentoPDF} download>Download Curriculum</a>
     </div>
   );
 }

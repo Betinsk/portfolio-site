@@ -1,6 +1,7 @@
     .divName {
         align-items: center;
         font-family: 'Raleway';
+        padding: 2px;
     }
 
     .divName h2 {
@@ -8,7 +9,7 @@
         padding: 0;
         text-align: center;
         font-family: 'Raleway';
-
+        
     }
 
     p {
@@ -22,8 +23,12 @@
     }
 
     .containerMore {
-        width: 1200px;
+        width: 100%;
         margin: auto;
+    }
+
+    .description {
+        padding: 5px
     }
 
     .moreDetails {
