@@ -18,7 +18,7 @@ const ProjectDetails = () => {
         setData(response[id - 1])
       })
   
-      }, []);
+      }, [id]);
   
       console.log(projectData)
   
