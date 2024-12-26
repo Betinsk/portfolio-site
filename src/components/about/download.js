@@ -1,5 +1,5 @@
 import React from 'react';
-import documentoPDF from '../../assets/CARLOS.pdf';
+import documentoPDF from '../../assets/CARLOS ALBERTO FIDELIS DE CARVALHO.pdf';
 import '../../css/about.css'
 
 
