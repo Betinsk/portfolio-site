@@ -13,8 +13,8 @@ const projectsData = [
           name: 'Prisão federal',
           img: prisaofederal,
           description: 'Um sistema de prisão federal Americano, inspirado na serie de tv, Orange is the new black, desenvolvido em react e css responsivo',
-          complexDetails: 'Um sistema prisional feito, baseado em uma api da internet que trás pessoas e informações, ainda está em desenvolvimento, na navbar tem uma opção chamada imates, que trás os dados dos supostos presos que estão no sitema',
-          link: 'https://prisaofederal.netlify.app/'
+          complexDetails: 'Um sistema prisional feito em java, utilizando Springbot, ainda está em desenvolvimento, na navbar tem uma opção chamada imates, que trás os dados dos supostos presos que estão no sistema',
+          link: 'https://prisaofederaljava.netlify.app/'
         },
         {
           id: 2,
