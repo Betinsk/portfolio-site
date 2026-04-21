@@ -1,16 +1,24 @@
-// About.js
 import React from 'react';
 import '../../css/about.css'
-import { Link } from 'react-router-dom';
+import DownloadLink from './download';
 
 function About() {
   return (
-    <section id="about">
-      <div className="divName">
-        <h2>Carlos</h2>
-          <h2>Carvalho</h2>
-            <p>Desenvolvedor web com projetos academicos desenvolvidos em várias linguagens como Javascript, e Java, frameworks como React, Angular, Springboot</p>
-          <p className='moreDetails'> <Link to='/moreDetails'> Mais detalhes</Link></p>
+    <section id="about" className="heroSection">
+      <div className="heroContent">
+        <div className="heroText">
+          <p className="heroRole">Desenvolvedor Web</p>
+          <h1 className="heroName">Carlos Carvalho</h1>
+          <p className="heroDescription">
+            Desenvolvedor focado em construir aplicações completas, do front ao back.
+            Experiência com React, JavaScript e Java com Spring Boot — gosto de resolver
+            problemas reais e entregar produtos funcionais.
+          </p>
+          <div className="heroActions">
+            <a href="#projects" className="btnPrimary">Ver Projetos</a>
+            <DownloadLink />
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,20 +1,42 @@
-// Contact.js
-import React from 'react';
-
+import React, { useState } from 'react';
 import '../css/contact.css'
-
-import { MdMarkEmailUnread } from "react-icons/md";
-import { FaWhatsapp } from "react-icons/fa";
-
-
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  const email = 'gmdust@hotmail.com';
+
+  function copyEmail() {
+    navigator.clipboard.writeText(email).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  }
+
   return (
-    <section>
+    <section id="contact" className="contactSection">
       <h2>Contato</h2>
-      <p>Entre em contato comigo através do email: <MdMarkEmailUnread /> <a href="mailto:gmdust@hotmail.com">gmdust@hotmail.com </a>
-        Ou <FaWhatsapp /> whats: 31992120527
-      </p>
+      <p className="contactSubtitle">Aberto a oportunidades — fique à vontade para entrar em contato.</p>
+      <div className="contactLinks">
+        <a href={`mailto:${email}`} className="contactItem">
+          <MdEmail className="contactIcon" />
+          <span>{email}</span>
+        </a>
+        <button className="contactItem copyBtn" onClick={copyEmail}>
+          <MdEmail className="contactIcon" />
+          <span>{copied ? 'Copiado!' : 'Copiar e-mail'}</span>
+        </button>
+        <a href="https://www.linkedin.com/in/carlos-carvalho" target="_blank" rel="noopener noreferrer" className="contactItem">
+          <FaLinkedin className="contactIcon" />
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Betinsk" target="_blank" rel="noopener noreferrer" className="contactItem">
+          <FaGithub className="contactIcon" />
+          <span>GitHub</span>
+        </a>
+      </div>
     </section>
   );
 }

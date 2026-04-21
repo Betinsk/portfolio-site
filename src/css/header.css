@@ -1,15 +1,46 @@
 .containerHeader {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     background-color: #ffffff;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-a {
-    color: #007bff; /* Cor do texto do link */
-    text-decoration: none; /* Remove sublinhado padrão */
-    transition: color 0.3s ease; /* Transição suave da cor */
+.containerHeader nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    padding: 16px 0;
+    margin: 0;
 }
 
-li {
+.containerHeader nav ul li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.containerHeader nav ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.containerHeader nav ul li a:hover {
+    color: #007bff;
+}
+
+@media only screen and (max-width: 600px) {
+    .containerHeader nav ul {
+        gap: 16px;
+        flex-wrap: wrap;
+        padding: 12px 16px;
+        justify-content: flex-start;
+    }
 }

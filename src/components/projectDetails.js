@@ -14,15 +14,9 @@ const ProjectDetails = () => {
     const  {id}  = useParams();
 
     useEffect(() => {
-      ArrayProjects().then((response) => {
-        setData(response[id - 1])
-      })
+      setData(ArrayProjects()[id - 1])
+    }, [id]);
   
-      }, [id]);
-  
-      console.log(projectData)
-  
-
   return (
     <div className='containerDetails'>
     <Header/>
@@ -33,7 +27,7 @@ const ProjectDetails = () => {
       <a href={projectData.link} target="_blank" rel="noopener noreferrer"> Link para o projeto </a>
       </div>
       <p>{projectData.complexDetails}</p>
-       <img className='datailsImg' src={projectData.img} ></img>
+       <img className='detailsImg' src={projectData.img} alt={projectData.name} />
       </div>
    
     </div>

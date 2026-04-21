@@ -1,51 +1,130 @@
-    .divName {
-        align-items: center;
-        font-family: 'Raleway';
-        padding: 2px;
+.heroSection {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 60px 20px;
+}
+
+.heroContent {
+    max-width: 700px;
+    width: 100%;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.heroRole {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: left;
+}
+
+.heroName {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.heroDescription {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+    text-align: left;
+    max-width: 560px;
+}
+
+.heroActions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.btnPrimary {
+    font-family: 'Raleway', sans-serif;
+    background-color: #007bff;
+    color: #fff !important;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btnPrimary:hover {
+    background-color: #0056b3;
+}
+
+.btnSecondary {
+    font-family: 'Raleway', sans-serif;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.btnSecondary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Página de mais detalhes */
+.containerMore {
+    width: 100%;
+    margin: auto;
+}
+
+.description {
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .heroName {
+        font-size: 2.5rem;
     }
 
-    .divName h2 {
-        margin: auto;
-        padding: 0;
-        text-align: center;
-        font-family: 'Raleway';
-        
+    .heroSection {
+        min-height: 80vh;
+        padding: 40px 20px;
     }
 
-    p {
-        text-align: center;
-        font-family: 'Raleway';
-    }
-
-    .DownloadLink {
-        text-align: center;
-        font-family: 'Raleway';
-    }
-
-    .containerMore {
-        width: 100%;
-        margin: auto;
+    .heroActions {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .description {
-        padding: 5px
-    }
-
-    .moreDetails {
-        text-align: center;
-        font-family: 'Raleway';
-    }
-
-
-    @media only screen and (max-width: 768px) {
-        .description {
-            width: 100%;
-            margin: auto;
-        }
-      
-    .containerMore {
         width: 80%;
         margin: auto;
     }
 
+    .containerMore {
+        width: 80%;
+        margin: auto;
     }
+}

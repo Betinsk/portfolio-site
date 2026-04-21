@@ -1,40 +1,39 @@
-// Projects.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/project.css'
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react';
 import ArrayProjects from '../api/arrayProjects';
 
 function Projects() {
-
   const [projectData, setData] = useState([])
 
   useEffect(() => {
-    ArrayProjects().then((response) => {
-      setData(response)
-    })
-
-    }, []);
-
-    console.log(projectData)
+    setData(ArrayProjects())
+  }, []);
 
   return (
     <section className='containerProject' id="projects">
-   <h2>Meus Projetos</h2>
+      <h2>Meus Projetos</h2>
       <div className="project-grid">
         {projectData.map((project) => (
           <div className="project-card" key={project.id}>
-            <h3>{project.name}</h3>
-            <img src= {project.img} />
-            <p>{project.description}</p>
-            <a href={project.link}> Link para o projeto</a> <br/> <br/>
-            <Link target="_blank" rel="noopener noreferrer" to={`/projectDetails/${project.id}`}> Detalhes</Link>
+            <img src={project.img} alt={project.name} />
+            <div className="project-card-body">
+              <h3>{project.name}</h3>
+              <div className="project-tags">
+                {project.tags.map((tag) => (
+                  <span className="tag" key={tag}>{tag}</span>
+                ))}
+              </div>
+              <p>{project.description}</p>
+              <div className="project-links">
+                <a href={project.link} target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                <Link to={`/projectDetails/${project.id}`} target="_blank" rel="noopener noreferrer">Detalhes</Link>
+              </div>
+            </div>
           </div>
-
-         
         ))}
       </div>
-  </section>
+    </section>
   );
 }
 
