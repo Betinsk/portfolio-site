@@ -28,7 +28,7 @@ function Contact() {
           <MdEmail className="contactIcon" />
           <span>{copied ? 'Copiado!' : 'Copiar e-mail'}</span>
         </button>
-        <a href="https://www.linkedin.com/in/carlos-carvalho" target="_blank" rel="noopener noreferrer" className="contactItem">
+        <a href="https://www.linkedin.com/in/carlos-carvalho-262131187/" target="_blank" rel="noopener noreferrer" className="contactItem">
           <FaLinkedin className="contactIcon" />
           <span>LinkedIn</span>
         </a>
